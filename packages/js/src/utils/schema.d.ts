@@ -35,6 +35,7 @@ export interface ExecutorOptions {
   assets: Array<AssetGlob | string>;
   main: string;
   outputPath: string;
+  rootDir?: string;
   tsConfig: string;
   swcrc?: string;
   watch: boolean;

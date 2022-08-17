@@ -220,6 +220,10 @@
             "type": "string",
             "description": "The output path of the generated files."
           },
+          "rootDir": {
+            "type": "string",
+            "description": "The root directory of the generated files"
+          },
           "tsConfig": {
             "type": "string",
             "description": "The path to the Typescript configuration file."

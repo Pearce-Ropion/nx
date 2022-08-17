@@ -139,7 +139,7 @@ function getNormalizedTsConfig(options: TypeScriptCompilationOptions) {
   const tsConfig = readTsConfig(options.tsConfig);
   tsConfig.options.outDir = options.outputPath;
   tsConfig.options.noEmitOnError = true;
-  tsConfig.options.rootDir = options.rootDir;
+  if (!tsConfig.options.rootDir) tsConfig.options.rootDir = options.rootDir;
   return tsConfig;
 }
 

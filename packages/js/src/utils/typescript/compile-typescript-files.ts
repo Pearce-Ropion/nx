@@ -52,6 +52,7 @@ export async function* compileTypeScriptFiles(
 
   const tscOptions: TypeScriptCompilationOptions = {
     outputPath: normalizedOptions.outputPath,
+    rootDir: normalizedOptions.rootDir,
     projectName: context.projectName,
     projectRoot: normalizedOptions.projectRoot,
     tsConfig: normalizedOptions.tsConfig,
